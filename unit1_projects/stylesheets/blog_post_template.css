@@ -79,7 +79,7 @@ footer p {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (min-width: 70px) {
   img {
     max-width: 100%
   }
