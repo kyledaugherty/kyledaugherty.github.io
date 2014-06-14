@@ -1,78 +1,72 @@
 body {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1em;
+  color: #A0A5AA;
+  background: #f8fafb;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #4b4b4b;
 }
 
 a {
-  color: #1a75cf;
+  color: #389adc;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #f63;
+  color: #ec8f46;
 }
 
-.main-container {
-  width: 100%;
-  margin: auto;
+#main-header {
+  background: #0881b3;
+  margin-bottom: 50px;
 }
 
-.header {
+header h1 {
   height: 50px;
   width: 100%;
-  padding: 0;
-  background: #1a75cf;
-  color: white;
-  text-align: center;
-}
-
-.header h1 {
-  margin: 0;
   padding-top: 5px;
-}
-
-.content-wrapper {
-  width: 960px;
-  margin: auto;
-  line-height: 1.5;
-}
-
-.sidebar {
-  width: 220px;
-  float: right;
-  padding: 60px 0 0 40px;
-}
-
-.sidebar p {
-  font-size: 14px;
-  color: #8e8e8e;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 2em;
 }
 
 .content-area {
-  width: 660px;
-  min-height: 620px;
-  float: right;
-  padding: 20px 20px 40px 20px;
+  width: 90%;
+  max-width: 970px;
+  margin: auto;
 }
 
-.content-area h1 {
-  font-size: 42px;
-  margin-bottom: 0;
+h1 {
+  font-size: 2em;
+  color: #fff;
 }
 
-.content-area h2 {
+h2 {
+  font-size: 1.75em;
+  color: #516273;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.375em;
+  color: #58a1c1;
+}
+
+.post-date {
+  font-size: 0.8125em;
   margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #E1E8EF;
 }
 
-.content-area img {
-  margin: 20px 0 20px 0;
-  padding: 10px 10px;
-  border: 1px solid #8e8e8e;
+.post {
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
-.footer {
-  background: #6cabe7;
+footer {
+  font-family: 'Oxygen', sans-serif;
+  background: #aab0b6;
   color: white;
   text-align: center;
   width: 100%;
@@ -80,7 +74,19 @@ a:hover {
   clear: both;
 }
 
-.footer p {
-  padding-top: 8px;
+footer p {
+  font-size: 0.875em;
+  padding-top: 10px;
 }
 
+@media screen and (max-width: 1170px) {
+  img {
+    max-width: 100%
+  }
+}
+
+@media screen and (max-width: 470px) {
+  img {
+    display: none;
+  }
+}
