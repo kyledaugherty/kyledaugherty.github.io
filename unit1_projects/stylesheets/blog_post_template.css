@@ -68,6 +68,10 @@ img {
   max-width: 100%;
 }
 
+.code {
+  max-width: 50%;
+}
+
 footer {
   font-family: 'Oxygen', sans-serif;
   background: #aab0b6;
