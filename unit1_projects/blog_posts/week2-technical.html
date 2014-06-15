@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kyle Daugherty</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog_post_template.css">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <header id="main-header">
+    <h1>Kyle Daugherty</h1>
+  </header>
+
+  <section class="content-area">
+    <article>
+      <header>
+        <h2>Difference Between Margin, Border and Padding</h2>
+        <p class="post-date"><em>Posted on 14 Jun 2014 by <a href="mailto:kyle.daugherty@gmail.com">Kyle Daugherty</a></em></p>
+        <h3>CSS Box Model</h3>
+      </header>
+      <p class="post">Any HTML element can be thought of as a box and in CSS this is referred to as the box model.  There are 4 different parts that make up the box model which consists of margin, borders, padding and the actual content inside the HTML element.  Here is an illustration of the box model:</p>
+
+      <img src="http://www.w3schools.com/css/box-model.gif">
+
+      <p class="post">Let's start off by discussing the content as it is the easiest to understand.  The content is the information inside of the HTML element.  So, whether it be text or an image that is the content area.  When the content area gets rendered by the browser, it is contained inside an invisible box.</p>
+
+      <p class="post">Next, is the padding.  The padding places a "buffer zone" between the content area and the border.  If the content area has a background set, then the padding will inherit it.</p>
+
+      <p class="post">Next up is the border.  The border outlines the element which may be the content area (if there is no padding) or it may surround the edge of the padded area.  The border can be set to have a thickness, styling (ex: solid, dotted, dashed) and color.  If there is no border color specified, then the border will use the color value of the element.</p>
+
+      <p class="post">The final piece to the box model is the margin.  It is very similar to padding in that it provides spacing, but margin puts space between the border and any surrounding elements.  Margin also differs from padding and it does not inherit any background and is completely transparent.</p>
+
+      <p class="post">The default way to calculate the size of the box is to add the padding, border and margin in addition to the content area.  For instance, the width is calculated by adding the content width, padding (left and right), border (left and right), and margin (left and right).  Similarily, height is determined by adding the content width, padding (top and bottom), border (top and bottom), and margin (top and bottom).  Margin is unique that it does not affect the size of the element per se.  Although, it must be included in the calculation because it provides a gutter between other elements.</p>
+
+      <p class="post">We are able to change the box-sizing property in CSS and set it to "border-box" instead of "content-box."  In doing so, the margin is excluded when calculating the size of the element.</p>
+    </article>
+  </section>
+  <footer>
+    <p>&copy 2014 Kyle Daugherty</p>
+  </footer>
+</body>
+</html>
