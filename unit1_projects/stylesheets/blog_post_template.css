@@ -20,6 +20,14 @@ a:hover {
   margin-bottom: 50px;
 }
 
+#main-header a {
+  color: white;
+}
+
+#main-header a:hover {
+  color: white;
+}
+
 header h1 {
   height: 50px;
   width: 100%;
