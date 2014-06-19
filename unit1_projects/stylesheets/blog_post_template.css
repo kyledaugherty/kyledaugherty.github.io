@@ -1,5 +1,5 @@
 body {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Opens sans', sans-serif;
   font-size: 1em;
   color: #A0A5AA;
   background: #f8fafb;
@@ -58,6 +58,10 @@ h2 {
 h3 {
   font-size: 1.375em;
   color: #58a1c1;
+}
+
+ul li {
+  line-height: 1.5;
 }
 
 .post-date {
