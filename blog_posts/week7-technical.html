@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kyle Daugherty</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog_post_template.css">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <header id="main-header">
+    <h1><a href="http://kyledaugherty.github.io">Kyle Daugherty</a></h1>
+  </header>
+
+  <section class="content-area">
+    <article>
+      <header>
+        <h2>SQL Injection</h2>
+        <p class="post-date"><em>Posted on 20 July 2014 by <a href="mailto:kyle.daugherty@gmail.com">Kyle Daugherty</a></em></p>
+      </header>
+      <p class="post">
+        SQL injection is a hacking technique that attempts to pass malicious SQL commands through a web application for execution by the backend database.  If the web application is vulnerable to SQL injection attacks, then the hacker may be able to view information from the database or even delete or alter information.  This type of attack is so common because of how simple it is to exploit and the fact that there are many web applications out there that remain vulnerable (despite that it is relatively easy to protect against).  According to <a href="http://en.wikipedia.org/wiki/SQL_injection">Wikipedia</a>, SQL injection was rated the number one attack on the OWASP (Open Web Application Security Project) top ten.
+      </p>
+      <p class="post">
+        Obviously, this is scary since web applications are database-driven and those databases often store sensitive information (e.g., credit card information, social security numbers, passwords, etc.).  A hacker could get access to this information by simply inserting SQL commands into one of the web application's form.  For example, consider there is a login form and in the username field the malicious user enters 'OR '1' = '1.  The resulting SQL query would be SELECT * FROM users WHERE usernmae = '' OR '1' = '1';.  This statement would always return the data for users because the OR condition evaluates to true (1 = 1).
+      </p>
+      <p class="post">
+        Luckily, there are aways to combat SQL injection attacks.  Prepared statements (parameterized queries) require that the SQL code be defined first, and then pass in each parameter to query later by using placeholders.  This allows there to be a distinction between code and data and a malicious user wouldn't be able to change the intent of the query.  Stored procedures are similar to prepared statements, except that the SQL code for a stored procedure is defined and stored in the database itself, and then called from the application.  Another method to combat these attacks is to escape characters that have special meaning in SQL before using it as part of the query.  However, from what I've read, this method is error-prone and may not prevent SQL injection for all situations.
+      </p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy 2014 Kyle Daugherty</p>
+  </footer>
+</body>
+</html>
