@@ -1,0 +1,59 @@
+* {
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background: #FFF;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: #FFF;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid #F0F1F2;
+}
+
+th, td {
+  padding: 3px;
+}
+
+th {
+  background: #F0F1F2;
+  font-family: Arial;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+tr td:first-child {
+  text-align: center;
+  width: 35%;
+}
+
+footer {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+#main-header {
+  background: #344A5F;
+  margin-bottom: 50px;
+}
+
+.content-area {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}

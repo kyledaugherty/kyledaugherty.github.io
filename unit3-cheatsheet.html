@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git Cheat Sheet</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheatsheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <header id="main-header">
+    <h1>Git Cheat Sheet</h1>
+  </header>
+
+  <section class="content-area">
+    <table>
+      <tbody>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>git init</td>
+          <td>Creates a new local repository.</td>
+        </tr>
+        <tr>
+          <td>git clone [url]</td>
+          <td>Downloads a project and its entire version history from remote repository.</td>
+        </tr>
+        <tr>
+          <td>git remote add [bookmark-name] [url]</td>
+          <td>Assigns the original repository to a remote repository that can be used to fetch changes not present in the local repository without modifying your files.</td>
+        </tr>
+        <tr>
+          <td>git remote -v</td>
+          <td>Lists all configured remote repositories.</td>
+        </tr>
+        <tr>
+          <td>git status</td>
+          <td>Lists all new or modified files and their current state (i.e., tracked, untracked, etc.)</td>
+        </tr>
+        <tr>
+          <td>git diff</td>
+          <td>Shows file differences not yet staged.</td>
+        </tr>
+        <tr>
+          <td>git diff --staged</td>
+          <td>Shows file differences between staging and the last file version.</td>
+        </tr>
+        <tr>
+          <td>git add [filename]</td>
+          <td>Adds the file to the staging area in preparation for versioning.  To add all files, use "." in place of the filename.</td>
+        </tr>
+        <tr>
+          <td>git reset [filename]</td>
+          <td>Unstages the file without losing its contents.</td>
+        </tr>
+        <tr>
+          <td>git rm [filename]</td>
+          <td>Deletes the fiel from the working directory and stages the deletion.</td>
+        </tr>
+        <tr>
+          <td>git commit -m "[descriptive message]"</td>
+          <td>Records staged files in version history.  Use the -m flag to add a description of the changes.</td>
+        </tr>
+        <tr>
+          <td>git push</td>
+          <td>Uploads local commits to the remote repository.</td>
+        </tr>
+        <tr>
+          <td>git fetch [bookmark]</td>
+          <td>Downloads all history from the repository bookmark.</td>
+        </tr>
+        <tr>
+          <td>git branch</td>
+          <td>Lists all local branches in the current repository.</td>
+        </tr>
+        <tr>
+          <td>git branch [branch-name]</td>
+          <td>Creates a new branch.</td>
+        </tr>
+        <tr>
+          <td>git checkout [branch-name]</td>
+          <td>Switches to the specified branch and updates the working directory.</td>
+        </tr>
+        <tr>
+          <td>git merge [branch]</td>
+          <td>Combines the specified branch's history into the current branch.</td>
+        </tr>
+        <tr>
+          <td>git branch -d [branch-name]</td>
+          <td>Deletes the specified branch.</td>
+        </tr>  
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+</html>
